@@ -41,7 +41,7 @@ void addNode()
         //kondisi jika start tidak memiliki nilai atau tidak kosong
         if (start != NULL)
         {
-            
+            start -> previous = newNode;
         }
     }
 }
