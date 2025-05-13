@@ -87,4 +87,9 @@ bool Search(int rollNo, Node **previous, Node **current)
 {
     *previous = NULL;
     *current = start;
+
+    while (*current != NULL && (*current)->noMhs != rollNo)
+    {
+        
+    }
 }
