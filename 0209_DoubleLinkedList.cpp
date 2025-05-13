@@ -151,3 +151,21 @@ bool listEmpty()
     return (start ==NULL);
 }
 
+void traverse()
+    {
+        if (listempty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+        {
+            cout << "\nData didalam list adalah :\n";
+            node *currentNode = start;
+            while (currentNode !=NULL)
+            {
+                cout << currentNode->noMhs <<endl;
+                currentNode = currentNode->next;
+            }
+            cout <<endl;
+        }
+    }
