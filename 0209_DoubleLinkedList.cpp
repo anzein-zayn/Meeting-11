@@ -47,4 +47,6 @@ void addNode()
         newNode -> previous = NULL; //membuat new node point ke NUll
         start = newNode;
     }
+    //kondisi jika semua kondisi if tidak terpenuho
+    else
 }
