@@ -56,5 +56,8 @@ void addNode()
 
         //looping selama current != null dan noMhs dari current lebih kecil dari noMhs dari newNode
         while (current != NULL && current ->noMhs < newNode->noMhs)
+        {
+            previous = current; // memindahkan previous ke current
+        }
     }
 }
