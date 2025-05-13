@@ -49,4 +49,8 @@ void addNode()
     }
     //kondisi jika semua kondisi if tidak terpenuho
     else
+    {
+        //set nilai current = start dan nilai prev =null
+        Node *current =start; //step 1.a start from the first node
+    }
 }
