@@ -43,5 +43,7 @@ void addNode()
         {
             start -> previous = newNode;
         }
+        //memberi nilai prev = null dan start = node baru
+        newNode -> previous = NULL;
     }
 }
