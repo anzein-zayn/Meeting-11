@@ -210,3 +210,52 @@ void searchData()
     }
 
 }
+
+int main()
+{
+    while(true)
+    {
+        try
+        {
+            cout << endl << "Menu";
+            cout << endl << "1. Menambahkan data kedalam list " << endl;
+            cout << "2. Menghapus data dari dalam list "<< endl;
+            cout << "3. Menampilkan semua data di dalam list" << endl;
+            cout << "4. Menampilkan semua data di dalam list secara terbalik"<< endl;
+            cout << "5. Mencari data dalam list"<<endl;
+            cout << "6. Keluar" <<endl;
+            cout << endl << "Masukkan pilihan (1-6): ";
+            char ch;
+            cin >> ch;
+
+            switch (ch)
+            {
+                case '1':
+                    addNode();
+                    break;
+                case '2':
+                    deleteNode();
+                    break;
+                case '3':
+                    traverse();
+                    break;
+                case '4':
+                    retraverse();
+                    break;
+                case '5':
+                    searchData();
+                    break;
+                case '6':
+                    return 0;
+                default:
+                    cout << "\nInvalid option" << endl;
+                    break;
+
+        }       
+        }
+        catch (exception &e)
+        {
+            cout << "Check for the values entered." <<endl;
+        }
+    }
+}
