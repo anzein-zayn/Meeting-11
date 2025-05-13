@@ -19,4 +19,6 @@ void addNode()
 {
     //pembuatan node dan pemberian value untuk data noMhs dan name
     Node *newNode = new Node();
+    cout << "\nEnter the roll number of the Student: ";
+    cin >> newNode-> name;
 }
