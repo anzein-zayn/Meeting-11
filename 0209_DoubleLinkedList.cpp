@@ -100,4 +100,16 @@ void deleteNode()
 {
     Node *previous, *current;
     int rollNo;
+
+    cout << "\nEnter the roll number of the student whose record is to be deleted: ";
+    cin >> rollNo;
+
+    if (start == NULL)
+    {
+        cout << "List is empty" <<endl;
+        return;
+    }
+
+    current = start;
+    previous = NULL;
 }
