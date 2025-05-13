@@ -10,4 +10,7 @@ struct Node
     //deklarasi pointer nest dan pref untuk penunjukan daa sebelum dan sesudah'
     Node *next;
     Node *previous;
-}
+};
+
+// deklarasi pinter START dan pemberian nilai
+Node *start = NULL;
