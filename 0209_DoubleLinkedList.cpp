@@ -70,5 +70,10 @@ void addNode()
         {
             current -> previous = newNode;
         }
+
+        if (previous != NULL)
+        {
+            previous->next = newNode;
+        }
     }
 }
