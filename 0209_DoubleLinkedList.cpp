@@ -17,5 +17,6 @@ Node *start = NULL;
 
 void addNode()
 {
-    
+    //pembuatan node dan pemberian value untuk data noMhs dan name
+    Node *newNode = new Node();
 }
