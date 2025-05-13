@@ -90,6 +90,7 @@ bool Search(int rollNo, Node **previous, Node **current)
 
     while (*current != NULL && (*current)->noMhs != rollNo)
     {
-        
+        *previous = *current;
+        *current = (*current) ->next;
     }
 }
