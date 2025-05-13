@@ -38,6 +38,10 @@ void addNode()
 
         //jika listnya kosong, membuat new node nya adalah START
         newNode->next = start;
-    
+        //kondisi jika start tidak memiliki nilai atau tidak kosong
+        if (start != NULL)
+        {
+            
+        }
     }
 }
