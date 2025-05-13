@@ -14,3 +14,8 @@ struct Node
 
 // deklarasi pinter START dan pemberian nilai
 Node *start = NULL;
+
+void addNode()
+{
+    
+}
