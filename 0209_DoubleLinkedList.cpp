@@ -52,5 +52,6 @@ void addNode()
     {
         //set nilai current = start dan nilai prev =null
         Node *current =start; //step 1.a start from the first node
+        Node *previous = NULL; //step 1.b previous node is NULL initially
     }
 }
