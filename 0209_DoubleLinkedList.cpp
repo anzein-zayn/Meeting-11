@@ -68,7 +68,7 @@ void addNode()
         //kondisi jjika current tidak sama dengan null
         if (current != NULL)
         {
-            
+            current -> previous = newNode;
         }
     }
 }
