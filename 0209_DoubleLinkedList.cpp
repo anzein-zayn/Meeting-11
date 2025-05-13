@@ -152,40 +152,61 @@ bool listEmpty()
 }
 
 void traverse()
+{
+    if (listEmpty())
     {
-        if (listempty())
+        cout << "\nList Kosong\n";
+    }
+    else
+    {
+        cout << "\nData didalam list adalah :\n";
+        Node *currentNode = start;
+        while (currentNode !=NULL)
         {
-            cout << "\nList Kosong\n";
+            cout << currentNode->noMhs <<endl;
+            currentNode = currentNode->next;
         }
-        else
+        cout <<endl;
+    }
+}
+
+void retraverse()
+{
+    if(listEmpty())
+        cout << "\nList is empty" << endl;
+    else
+    {
+        cout << "\nRecords in descending order of roll number are: " <<endl;
+        Node *currentnode = start;
+        while ( currentnode ->next != NULL)
+            currentnode = currentnode->next;
+
+        while (currentnode != NULL)
         {
-            cout << "\nData didalam list adalah :\n";
-            node *currentNode = start;
-            while (currentNode !=NULL)
-            {
-                cout << currentNode->noMhs <<endl;
-                currentNode = currentNode->next;
-            }
-            cout <<endl;
+            cout << currentnode->noMhs << " " << currentnode->name <<endl;
+            currentnode= currentnode ->previous;
         }
     }
 
-    void retraverse()
+}
+
+void searchData()
+{
+    if(listEmpty())
     {
-        if(listEmpty())
-            cout << "\nList is empty" << endl;
-        else
-        {
-            cout << "\nRecords in descending order of roll number are: " <<endl;
-            Node *currentnode = start;
-            while ( currentnode ->next != NULL)
-                currentnode = currentnode->next;
-
-            while (currentnode != NULL)
-            {
-                cout << currentnode->noMhs << " " << currentnode->name <<endl;
-                currentnode= currentnode ->previous;
-            }
-        }
-
+        cout << "\nList is empty" <<endl;
     }
+    Node *prev, *curr;
+    prev = curr = NULL;
+    cout << "\nEnter the roll number of the student whose record you want to search: ";
+    int num;
+    cin>> num;
+    if (Search(num, &prev, &curr) == false)
+        cout << "\nRecord not found" <<endl;
+    else{
+        cout << "\nRecourd found" << endl;
+        cout << "\nRoll number : " << curr ->noMhs <<endl;
+        cout << "\nName : " << curr ->name <<endl;
+    }
+
+}
